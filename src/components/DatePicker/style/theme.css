@@ -1,0 +1,324 @@
+@charset 'UTF-8';
+.slick-dots,
+.slick-next,
+.slick-prev {
+    position: absolute;
+    display: block;
+    padding: 0
+}
+
+.slick-dots li button:before,
+.slick-next:before,
+.slick-prev:before {
+    font-family: slick;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+
+@font-face {
+    font-family: slick;
+    font-weight: 400;
+    font-style: normal;
+    src: url(../fonts/slick.eot);
+    src: url(../fonts/slick.eot?#iefix) format('embedded-opentype'), url(../fonts/slick.woff) format('woff'), url(../fonts/slick.ttf) format('truetype'), url(../fonts/slick.svg#slick) format('svg')
+}
+
+.slick-next,
+.slick-prev {
+    font-size: 0;
+    line-height: 0;
+    top: 50%;
+    width: 20px;
+    height: 20px;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    cursor: pointer;
+    color: transparent;
+    border: none;
+    outline: 0;
+    background: 0 0
+}
+
+.slick-next:focus,
+.slick-next:hover,
+.slick-prev:focus,
+.slick-prev:hover {
+    color: transparent;
+    outline: 0;
+    background: 0 0
+}
+
+.slick-next:focus:before,
+.slick-next:hover:before,
+.slick-prev:focus:before,
+.slick-prev:hover:before {
+    opacity: 1
+}
+
+.slick-next.slick-disabled:before,
+.slick-prev.slick-disabled:before {
+    opacity: .25
+}
+
+.slick-next:before,
+.slick-prev:before {
+    font-size: 20px;
+    line-height: 1;
+    opacity: .75;
+    color: #fff
+}
+
+.slick-prev {
+    left: -25px
+}
+
+[dir=rtl] .slick-prev {
+    right: -25px;
+    left: auto
+}
+
+.slick-prev:before {
+    content: 'â†'
+}
+
+.slick-next:before,
+[dir=rtl] .slick-prev:before {
+    content: 'â†’'
+}
+
+.slick-next {
+    right: -25px
+}
+
+[dir=rtl] .slick-next {
+    right: auto;
+    left: -25px
+}
+
+[dir=rtl] .slick-next:before {
+    content: 'â†'
+}
+
+.slick-dotted.slick-slider {
+    margin-bottom: 30px
+}
+
+.slick-dots {
+    bottom: -25px;
+    width: 100%;
+    margin: 0;
+    list-style: none;
+    text-align: center
+}
+
+.slick-dots li {
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+    padding: 0;
+    cursor: pointer
+}
+
+.slick-dots li button {
+    font-size: 0;
+    line-height: 0;
+    display: block;
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+    cursor: pointer;
+    color: transparent;
+    border: 0;
+    outline: 0;
+    background: 0 0
+}
+
+.slick-dots li button:focus,
+.slick-dots li button:hover {
+    outline: 0
+}
+
+.slick-dots li button:focus:before,
+.slick-dots li button:hover:before {
+    opacity: 1
+}
+
+.slick-dots li button:before {
+    font-size: 6px;
+    line-height: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    content: 'â€¢';
+    text-align: center;
+    opacity: .25;
+    color: #000
+}
+
+.slick-dots li.slick-active button:before {
+    opacity: .75;
+    color: #000
+}
+
+/** 5-7-2018 **/
+
+.main_div {
+    padding: 50px;
+    margin: 50px;
+}
+
+.main_div .main_year {
+    width: 300px;
+    float: left;
+    margin-left: 20%;
+    background-color: #fff;
+    border-radius: 2px;
+    position: relative;
+}
+
+.main_div .main_month {
+    width: 300px;
+    float: right;
+    margin-right: 20%;
+    background-color: #fff;
+    border-radius: 2px;
+    position: relative;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.main_div .main_day {
+    margin: 50px;
+    position: relative;
+    margin-bottom: 0;
+}
+
+.main_div .main_year h3 {
+    margin: 0;
+    padding: 10px 12px;
+}
+
+.main_div .main_month h3 {
+    margin: 0;
+    padding: 10px 12px;
+}
+
+.main_div .main_day button {
+    border: 0;
+}
+
+/* .main_div .main_day button:hover {
+    background-color: deepskyblue;
+    color: #fff;
+} */
+
+
+.main_div .main_day h3 {
+    font-size: 20px;
+}
+
+.main_div .main_day h3:last-child {
+    font-weight: 200;
+    letter-spacing: 1px;
+}
+
+.main_div .main_day button.active {
+    color: #fff;
+}
+
+.main_div .main_year button{
+    position: absolute;
+    border: 0px none;
+    background-color: #fafafa;
+}
+
+.main_div .main_year button:first-child {
+    top: 0;
+    left: 0%;
+    height: 41px;
+    z-index: 999;
+}
+
+.main_div .main_year button:last-child {
+    bottom: 0;
+    right: 0%;
+    height: 41px;
+}
+
+.main_div .main_month button{
+    position: absolute;
+    border: 0px none;
+    background-color: #fafafa;
+}
+
+.main_div .main_month button:first-child {
+    top: 0;
+    left: 0%;
+    height: 41px;
+    z-index: 999;
+}
+
+.main_div .main_month button:last-child {
+    bottom: 0;
+    right: 0%;
+    height: 41px;
+}
+
+.main_div .main_day .back {
+    height: 109px;
+    top: 0%;
+    left: -5%;
+    position: absolute;
+    z-index: 999;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: #fafafa;
+}
+
+.main_div .main_day .next {
+    height: 109px;
+    bottom: 0%;
+    right: -5%;
+    position: absolute;
+    z-index: 999;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: #fafafa;
+}
+
+.main_div .main_year button:first-child img {
+    width: 20px;
+    margin-top: 3px;
+}
+
+.main_div .main_year button:last-child img {
+    width: 20px;
+    margin-top: 3px;
+}
+
+.main_div .main_month button:first-child img {
+    width: 20px;
+    margin-top: 3px;
+}
+
+.main_div .main_month button:last-child img {
+    width: 20px;
+    margin-top: 3px;
+}
+
+.main_div .main_day .back img{
+    width: 20px;
+    margin-top: 3px;
+}
+
+.main_div .main_day .next img{
+    width: 20px;
+    margin-top: 3px;
+}
