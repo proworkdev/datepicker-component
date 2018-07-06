@@ -31,4 +31,6 @@ onChange | Funnction trigger on change value | func |
 disabledDays | Disabled Days | Array of dates object | null
 disabled | picker disabled | boolean | false
 activeSlotBackground | Color of active week | string | '#6997ff'
+
+Time Selecter and custom component of back and next is pending.
  
