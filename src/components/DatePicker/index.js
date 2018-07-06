@@ -211,6 +211,7 @@ DatePicker.defaultProps = {
   value: new Date(),
   disabled: false,
   disabledDays: [],
+  onChange: () =>{},
   activeSlotBackground: '#6997ff'
 };
 export default DatePicker;
