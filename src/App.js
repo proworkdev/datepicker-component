@@ -8,8 +8,7 @@ class App extends Component {
     currentDate:new Date("26 august 2020")
   }
   getDate = (date) => {
-    console.log(date)
-this.setState({currentDate:date});
+    this.setState({currentDate:date});
   }
   render() {
     return (
